@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ミエルカ サポートページ</title>
+<style>
+  :root {
+    --bg: #fdfbf7;
+    --fg: #2b2a28;
+    --muted: #6b6862;
+    --accent: #4a6b5d;
+    --card: #f3efe7;
+    --border: #e0dbd0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1b19;
+      --fg: #e8e5df;
+      --muted: #a09c93;
+      --accent: #8fb8a5;
+      --card: #26241f;
+      --border: #3a372f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.9;
+    font-size: 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 1.6rem; margin: 0 0 0.5rem; }
+  .lead { color: var(--muted); margin-bottom: 2rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+  }
+  h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+  a { color: var(--accent); }
+  footer {
+    max-width: 720px; margin: 0 auto; padding: 0 1.25rem 2.5rem;
+    color: var(--muted); font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>ミエルカ</h1>
+  <p class="lead">きぶんの波を、みえる形に。<br>
+  双極性障害とともに暮らす方のための、気分・睡眠の記録アプリです。</p>
+
+  <div class="card">
+    <h2>プライバシーポリシー</h2>
+    <p><a href="./privacy.html">プライバシーポリシーはこちら</a></p>
+  </div>
+
+  <div class="card">
+    <h2>お問い合わせ</h2>
+    <p>ご意見・不具合のご報告は、メールでお願いします。<br>
+    <a href="mailto:hoomaa1432@gmail.com">hoomaa1432@gmail.com</a></p>
+  </div>
+
+  <div class="card">
+    <h2>大切なお知らせ</h2>
+    <p>ミエルカは医療機器ではなく、診断・治療を行うものではありません。
+    体調に不安があるときは、医師などの専門家にご相談ください。</p>
+  </div>
+</main>
+<footer>
+  <p>© 2026 ミエルカ 開発者</p>
+</footer>
+</body>
+</html>

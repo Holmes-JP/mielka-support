@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | ミエルカ</title>
+<style>
+  :root {
+    --bg: #fdfbf7;
+    --fg: #2b2a28;
+    --muted: #6b6862;
+    --accent: #4a6b5d;
+    --card: #f3efe7;
+    --border: #e0dbd0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1b19;
+      --fg: #e8e5df;
+      --muted: #a09c93;
+      --accent: #8fb8a5;
+      --card: #26241f;
+      --border: #3a372f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.9;
+    font-size: 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size: 1.5rem; margin: 0 0 0.25rem; }
+  .date { color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem; }
+  h2 {
+    font-size: 1.1rem;
+    margin: 2.2rem 0 0.6rem;
+    padding-left: 0.6rem;
+    border-left: 4px solid var(--accent);
+  }
+  p, li { margin: 0.4rem 0; }
+  ul { padding-left: 1.4rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.9rem 1.1rem;
+    margin: 0.8rem 0;
+  }
+  a { color: var(--accent); }
+  footer {
+    max-width: 720px; margin: 0 auto; padding: 0 1.25rem 2.5rem;
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .toplink { font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="toplink"><a href="./index.html">← ミエルカ サポートページ</a></p>
+  <h1>プライバシーポリシー</h1>
+  <p class="date">制定日: 2026年8月3日</p>
+
+  <p>本ポリシーは、個人開発者（以下「開発者」）が提供するアプリ
+  「ミエルカ」（以下「本アプリ」）における情報の取り扱いを定めるものです。</p>
+
+  <h2>1. 記録データは端末の中にだけ保存されます</h2>
+  <p>本アプリで記録した気分・睡眠・日記などのデータは、
+  <strong>お使いの端末の中にのみ保存されます</strong>。
+  アカウント登録は不要で、開発者がこれらの記録を閲覧・収集することはありません。</p>
+  <div class="card">
+    <p>アプリをアンインストールすると、端末内の記録は削除されます。
+    レポート（PDF）の出力・共有は、ご自身の操作によってのみ行われます。</p>
+  </div>
+
+  <h2>2. 「AIふりかえり」で送信される情報（任意機能）</h2>
+  <p>「広告を見て、AIにふりかえってもらう」機能を使うことを選んだ場合に限り、
+  ふりかえり文の生成のため、次の情報が開発者のサーバー
+  （Amazon Web Services・東京リージョン）を経由して OpenAI のAPIに送信されます。</p>
+  <ul>
+    <li>選択した期間の気分の記録（スコア）</li>
+    <li>睡眠の記録（睡眠時間・眠りの質・中途覚醒の回数）</li>
+    <li>日記の文章（<strong>設定をオンにした場合のみ</strong>・1日300文字まで）</li>
+  </ul>
+  <p>氏名・連絡先・薬剤名などが送信されることはありません。
+  送信された内容はふりかえり文の生成のみに使われ、
+  <strong>開発者のサーバーには保存されません</strong>
+  （利用回数の管理のため、匿名ID・日付・回数のみを記録します）。</p>
+  <p>OpenAI のAPIに送信されたデータは、既定でAIモデルの学習には使用されません。
+  不正利用の監視のため一定期間保持されることがあります。詳細は
+  <a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener">OpenAIのデータ利用ポリシー</a>
+  をご確認ください。</p>
+
+  <h2>3. 匿名IDについて</h2>
+  <p>「AIふりかえり」の利用回数を管理するため、Amazon Cognito が発行する
+  匿名IDを使用します。このIDは端末を識別するためだけのもので、
+  氏名・メールアドレスなどの個人情報とは結び付きません。</p>
+
+  <h2>4. 広告について</h2>
+  <p>本アプリは Google AdMob による広告を表示します。
+  広告の配信・計測のため、Google が広告ID・端末情報・おおよその位置情報などを
+  取得することがあります。詳細は以下をご確認ください。</p>
+  <ul>
+    <li><a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a></li>
+    <li><a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
+  </ul>
+  <p>パーソナライズ広告は、端末の設定（設定 → Google → 広告）から
+  広告IDのリセット・削除により制限できます。
+  動画広告（リワード広告)の視聴は任意であり、視聴しなくても
+  本アプリの記録機能はすべて利用できます。</p>
+
+  <h2>5. 第三者への提供</h2>
+  <p>開発者は、上記（Google・Amazon Web Services・OpenAI）に記載した目的以外で、
+  利用者の情報を第三者に提供・販売することはありません。
+  ただし、法令に基づく開示要請がある場合を除きます。</p>
+
+  <h2>6. お子さまのプライバシー</h2>
+  <p>本アプリは13歳未満のお子さまの利用を想定しておらず、
+  13歳未満のお子さまから意図的に情報を収集することはありません。</p>
+
+  <h2>7. 医療に関する免責</h2>
+  <p>本アプリは医療機器ではなく、診断・治療・医学的助言を行うものではありません。
+  体調に不安があるときは、医師などの専門家にご相談ください。</p>
+
+  <h2>8. 本ポリシーの変更</h2>
+  <p>本ポリシーの内容を変更する場合は、本ページで告知します。
+  重要な変更がある場合は、アプリ内でもお知らせします。</p>
+
+  <h2>9. お問い合わせ</h2>
+  <p>本ポリシーに関するお問い合わせは、次の連絡先までお願いします。</p>
+  <div class="card">
+    <p>メール: <a href="mailto:hoomaa1432@gmail.com">hoomaa1432@gmail.com</a></p>
+  </div>
+</main>
+<footer>
+  <p>© 2026 ミエルカ 開発者</p>
+</footer>
+</body>
+</html>
